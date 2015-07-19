@@ -1,3 +1,26 @@
 body {
+	
+}
+
+
+.project-image {
+	width: 100%;
+	height: auto;
+
+}
+
+
+.name {
 	font-family: 'Shadows Into Light', cursive;
+	font-size: 50px;
+	font-weight: 400;
+	width: 100%;
+	color:rgb(0, 158, 255);
+	text-align: center;
+}
+
+.header {
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
 }
