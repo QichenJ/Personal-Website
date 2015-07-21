@@ -2,6 +2,7 @@ $(function() {
 	var nav = $('#nav');
 	var navHomeY = nav.offset().top;
 	var isFixed = false;
+	var navWrap = $('#nav-wrap');
 	var $w = $(window);
 	$w.scroll(function () {
 		var scrollTop = $w.scrollTop();
@@ -9,9 +10,7 @@ $(function() {
 		if(shouldBeFixed && !isFixed) {
 			nav.css({
 				position: 'fixed',
-				top:0,
-				left: nav.offset.left,
-				width: nav.width()
+				width: '100%'
 			});
 			isFixed = true;
 		}else if (!shouldBeFixed && isFixed) {
