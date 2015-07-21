@@ -51,6 +51,7 @@ ul#nav {
 	padding: 0;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.3);
+	z-index: 2;
 }
 
 ul#nav li {
@@ -60,7 +61,6 @@ ul#nav li {
 
 ul#nav li a {
 	color:white;
-	z-index: 2;
 	padding: 8px 13px;
 	display: inline-block;
 	text-align: center;
