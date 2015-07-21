@@ -1,6 +1,3 @@
-body {
-	
-}
 
 
 .nopadding {
@@ -34,6 +31,36 @@ body {
 	background-color: rgb(255,255,255);
 	width: 145px;
 	margin-left: auto;
-	margin-right:auto;
+	margin-right: auto;
 	border-radius: 100%;
+}
+
+
+#nav-wrap {
+	font: 22px 'opensans-bold', sans-serif;
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+ul#nav {
+	min-height: 48px;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+}
+
+
+
+ul#nav li {
+	height: 48px;
+	display: inline-block;
+}
+
+ul#nav li a {
+	padding: 8px 13px;
+	display: inline-block;
+	text-align: center;
 }
