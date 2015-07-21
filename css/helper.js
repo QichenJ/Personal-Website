@@ -10,8 +10,7 @@ $(function() {
 			nav.css({
 				position: 'fixed',
 				top: 0,
-				left: 0,
-				width: nav.width()
+				left: 0
 			});
 			isFixed = true;
 		}else if (!shouldBeFixed && isFixed) {

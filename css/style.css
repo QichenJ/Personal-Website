@@ -42,12 +42,14 @@
 	margin: 0 auto;
 	left: 0;
 	top: 0;
+	
 }
 
 
 ul#nav {
 	text-align: center;
 	padding: 0;
+	width: 100%;
 	background: rgba(0, 0, 0, 0.3);
 }
 
@@ -58,7 +60,7 @@ ul#nav li {
 
 ul#nav li a {
 	color:white;
-
+	z-index: 2;
 	padding: 8px 13px;
 	display: inline-block;
 	text-align: center;
