@@ -10,6 +10,15 @@
 	//Help to change color when in its section
 	$(window).on('scroll resize', onScreen);
 
+
+	//This is for easypiechart
+	$('.chart').easyPieChart({
+		barColor: 'rgba(66, 68, 69, 1)',
+		trackColor: 'rgba(215, 219, 221, 0.6)',
+		lineWidth:10,
+		size: 100
+	});
+
 })();
 
 
