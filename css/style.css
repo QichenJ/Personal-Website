@@ -10,7 +10,45 @@
 
 }
 
+.project-image-coming {
+	width: 100%;
+	height: 100%;
 
+}
+
+
+.project-image:hover {
+	opacity: 0.3;
+}
+
+.project-hover {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: absolute;
+	transition:opacity 1s ease 0s;
+}
+
+.project-hover h3 {
+	padding-left: 8%;
+	padding-right: 8%;
+	margin-top: 15%;
+	font-size: 150%;
+	font-weight: 400;
+}
+
+.project-hover p {
+	padding-right: 8%;
+	padding-left: 8%;
+	margin-top: 10px;
+	color: rgba(44, 164, 209, 1);
+}
+.project-hover:hover {
+	opacity: 1;
+	background-color: rgba(255, 255, 255, .86);
+}
 .name {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 50px;
