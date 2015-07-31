@@ -174,3 +174,18 @@ ul#nav li a {
 	margin-top: 0.2em;
 	margin-bottom: 0.3em;
 }
+
+h3 {
+	font-family: opensans-bold, sans-serif;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.info {
+	font-family: librebaskerville-italic, serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #6E7881;
+	margin-top: 9px;
+	margin-bottom: 18px;
+}
