@@ -246,6 +246,14 @@ fieldset {
 	width: 65%;
 }
 
+#contact input:focus {
+	background-color: #11ABB0;
+}
+
+#contact textarea:focus {
+	background-color: #11ABB0;
+}
+
 #contact span.required {
 	color: #11ABB0;
 	font-size: 13px;
@@ -261,6 +269,28 @@ fieldset {
 	line-height: 24px;
 	width: 65%;
 }
+
+#contact button.submit {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	background: #0D0D0D;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	height: auto;
+	margin-left: 26%;
+	padding: 20px;
+
+}
+
+#contact button.submit:hover {
+	color: #0D0D0D;
+	background-color: #fff;
+	transition:1s;
+
+
+}
 .columns {
 	position: relative;
 	padding-bottom: 0;
@@ -274,7 +304,6 @@ fieldset {
 .row .eight {
 	width: 66.666667%;
 }
-
 
 .row .four {
 	width: 33.333333%;
