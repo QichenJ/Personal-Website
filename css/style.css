@@ -77,7 +77,7 @@ ul#nav li a.highlight {
 	color: orange;
 }
 #nav-wrap {
-	font: 22px 'opensans-bold', sans-serif;
+	font: 22px 'Open Sans', sans-serif;
 	width: 100%;
 	margin: 0 auto;
 	left: 0;
@@ -109,7 +109,7 @@ ul#nav li a {
 
 
 #skills h1 {
-	font: 18px/24px 'opensans-bold', sans-serif;
+	font: 18px/24px 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -123,7 +123,7 @@ ul#nav li a {
 
 
 #education h1 {
-	font: 18px/24px 'opensans-bold', sans-serif;
+	font: 18px/24px 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -164,7 +164,7 @@ ul#nav li a {
 	font-size: 150%;
 }
 .label {
-	font: 15px 'opensans-bold', sans-serif;
+	font: 15px 'Open Sans', sans-serif;
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -176,7 +176,7 @@ ul#nav li a {
 }
 
 h3 {
-	font-family: opensans-bold, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 25px;
 	line-height: 30px;
 }
@@ -216,7 +216,7 @@ fieldset {
 }
 
 #contact label {
-	font-family: opensans-bold, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 25px;
 	line-height: 24px;
 	margin-top: 12px;
