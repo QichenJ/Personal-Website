@@ -28,6 +28,14 @@
 			offset: 'bottom-in-view'
 	});
 	
+	$('.hamburgerIcon').on('click', function() {
+		var navbar = $('#nav');
+		if(navbar.css('display') === 'none') {
+			navbar.css('display',  'block');
+		}else {
+			navbar.css('display', 'none');
+		}
+	});
 })();
 
 
