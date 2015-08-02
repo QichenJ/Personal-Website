@@ -1,4 +1,7 @@
-
+body {
+	line-height: 30px;
+	font-family:  'Open Sans', sans-serif;
+}
 
 .nopadding {
 	padding: 0;
@@ -200,8 +203,11 @@ h3 {
 }
 
 p.head {
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: 100;
+	font-family:  'Open Sans', sans-serif;
+	line-height: 36px;
+	margin-bottom: 50px;
 }
 
 
@@ -217,7 +223,7 @@ fieldset {
 
 #contact label {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 25px;
+	font-size: 15px;
 	line-height: 24px;
 	margin-top: 12px;
 	margin-bottom: 12px;
@@ -232,9 +238,9 @@ fieldset {
 	margin-left: auto;
 }
 #contact input {
-	padding-top: 18px;
+	padding-top: 10px;
 	padding-right: 20px;
-	padding-bottom: 18px;
+	padding-bottom: 10px;
 	padding-left: 20px;
 	color: #eee;
 	background: #373233;
@@ -277,10 +283,11 @@ fieldset {
 	color: #fff;
 	border: none;
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 15px;
 	height: auto;
 	margin-left: 26%;
-	padding: 20px;
+	padding: 15px;
+	border-radius: 5px;
 
 }
 
@@ -307,4 +314,18 @@ fieldset {
 
 .row .four {
 	width: 33.333333%;
+}
+
+#contact h4 {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+	color: #BEEEEE;
+	margin-bottom: 6px;
+}
+
+@media screen and (max-width: 500px) {
+	.columns {
+		float: none;
+	}
 }
