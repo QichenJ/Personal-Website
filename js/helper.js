@@ -36,6 +36,15 @@
 			navbar.css('display', 'none');
 		}
 	});
+
+	$(window).resize(function(){
+		if ($(window).width() >= 601) {
+			$('#nav').css('display', 'inline-block');
+		} else {
+			$('#nav').css('display', 'none');
+		}
+
+	});
 })();
 
 

@@ -19,8 +19,21 @@
 body {
 	line-height: 30px;
 	font-family:  'Open Sans', sans-serif;
+	width: 100%;
 }
 
+header {
+	position: relative;
+	width: 100%;
+	min-height: 500px; 
+	background-image: url("../images/b3.jpg");
+	background-position-x: 50%;
+	background-position-y: 0;  
+	background-color: #161415;
+	background-size: cover;
+	-webkit-background-size:cover; 
+	margin-bottom: 30px;
+}
 .nopadding {
 	padding: 0;
 }
@@ -296,7 +309,7 @@ fieldset {
 	width: 65%;
 }
 
-#contact button.submit {
+#contact input.submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	background: #0D0D0D;
@@ -308,10 +321,11 @@ fieldset {
 	margin-left: 26%;
 	padding: 15px;
 	border-radius: 5px;
+	width: auto;
 
 }
 
-#contact button.submit:hover {
+#contact input.submit:hover {
 	color: #0D0D0D;
 	background-color: #fff;
 	transition:1s;
@@ -357,10 +371,11 @@ fieldset {
 	font-size: 25px;
 	padding: 15px;
 	display: none;
+	background-color: #CC5200;
 }
 .contactIcon {
 	font-size: 60px;
-	padding-left:35px;
+	padding-left:10px;
 	width: 100%;
 	padding-top: 20px; 
 }
@@ -392,7 +407,7 @@ fieldset {
 	}
 
 	
-	#contact button.submit {
+	#contact input.submit {
 		margin-left: 0;
 	}
 
@@ -401,9 +416,6 @@ fieldset {
 @media screen and (max-width: 600px) {
 	#nav-wrap {
 		width: auto;
-	}
-	#nav {
-		display: none;
 	}
 	ul#nav li {
 		display: block;
