@@ -15,9 +15,10 @@
   font-family: 'zocial', sans-serif;
 }
 
-
+a:hover {
+	text-decoration: none;
+}
 body {
-
 	line-height: 30px;
 	font-family:  'Open Sans', sans-serif;
 	width: 100%;
@@ -98,6 +99,48 @@ header {
 #about p {
 	margin-bottom: 30px;
 	line-height: 30px;
+	color: #7A7A7A;
+}
+
+#about .contactDetails {
+	width: 50%;
+	float: left;
+}
+
+#about .contactDetails h2 {
+	font-size: 22px;
+	line-height: 30px;
+	margin-bottom: 12px;
+}
+.button {
+	
+	line-height: 30px;
+	padding: 12px 20px;
+	cursor: pointer;
+	height: auto;
+	border: none;
+	background-color: #444;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+
+}
+
+.button:hover {
+	text-decoration: none;
+	color: #11ABB0;
+	transition: .5s ease-in-out;
+}
+#about .contactInfo {
+	width: 100%;
+}
+#about .Resume {
+	width: 50%;
+	height: auto;
+	float: left;
+	margin-top: 50px;
+	
 }
 .project-image {
 	width: 100%;
