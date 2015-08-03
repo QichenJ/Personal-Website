@@ -8,7 +8,7 @@
 	});
 
 	//Help to change color when in its section
-	$(window).on('scroll resize', onScreen);
+	$(window).on('load scroll resize', onScreen);
 
 
 	//This is for easypiechart
@@ -28,6 +28,7 @@
 			offset: 'bottom-in-view'
 	});
 	
+	//when hamburgerIcon is clicked, the nav bar will show or off
 	$('.hamburgerIcon').on('click', function() {
 		var navbar = $('#nav');
 		if(navbar.css('display') === 'none') {
@@ -37,6 +38,8 @@
 		}
 	});
 
+	//Because .css added inline style, so I need to change inline display when page 
+	//resized back 
 	$(window).resize(function(){
 		if ($(window).width() >= 601) {
 			$('#nav').css('display', 'inline-block');
@@ -56,11 +59,12 @@ function onScreen() {
 		var $this = $(this)
 
 		//check if the navbar is in this section
-
+		console.log(windowScroll);
+		console.log(navHeight);
+		console.log($this.offset().top);
 		if((windowScroll + navHeight >= $this.offset().top) &&
 			(windowScroll + navHeight <= $this.offset().top + $this.height())) {
 			$('li a#nav-' + $this.attr('id')).addClass('highlight');
-		console.log($('li a#nav-' + $this.attr('id')));
 		} else {
 			$('li a#nav-' + $this.attr('id')).removeClass('highlight');
 		}
