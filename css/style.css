@@ -17,6 +17,7 @@
 
 
 body {
+
 	line-height: 30px;
 	font-family:  'Open Sans', sans-serif;
 	width: 100%;
@@ -51,7 +52,7 @@ header {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 25px;
 	line-height: 1.9em;
-	color: #fff;
+	color: #A8A8A8;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -86,6 +87,18 @@ header {
 	padding: 0;
 }
 
+
+#about h2 {
+	font-size: 32px;
+	line-height: 30px;
+	font-weight: 300;
+	margin-bottom: 12px;
+}
+
+#about p {
+	margin-bottom: 30px;
+	line-height: 30px;
+}
 .project-image {
 	width: 100%;
 	height: 100%;
@@ -459,11 +472,11 @@ fieldset {
 	}
 
 	.banner h1 {
-		font-size: 25px;
+		font-size: 35px;
 	}
 
 	.banner h3 {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	
 	#contact input.submit {
