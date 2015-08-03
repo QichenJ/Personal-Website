@@ -417,6 +417,9 @@ fieldset {
 	#nav-wrap {
 		width: auto;
 	}
+	#nav {
+		display: none;
+	}
 	ul#nav li {
 		display: block;
 		width: auto;
