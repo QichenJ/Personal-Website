@@ -26,13 +26,61 @@ header {
 	position: relative;
 	width: 100%;
 	min-height: 500px; 
-	background-image: url("../images/b3.jpg");
+	background-image: url("../images/b5.jpg");
 	background-position-x: 50%;
 	background-position-y: 0;  
 	background-color: #161415;
 	background-size: cover;
 	-webkit-background-size:cover; 
 	margin-bottom: 30px;
+}
+
+
+.banner {
+	height: 100%;
+	vertical-align: middle;
+	margin-top: 80px;
+}
+.banner h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 90px;
+	text-align: center;
+	color: #fff;
+}
+.banner h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	line-height: 1.9em;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.banner hr {
+	width: 80%;
+	margin: 18px auto 24px auto;
+	border-color: rgb(150, 150, 150);
+}
+
+.social {
+	margin: 24px 0;
+	font-size: 30px;
+	text-align: center;
+}
+
+.social li {
+	display: inline-block;
+	margin: 0 15px;
+
+}
+.social li a {
+	color: #fff;
+}
+
+
+.social li a:hover {
+	color: #11ABB0;
+	transition: color .3s ease-in-out;
 }
 .nopadding {
 	padding: 0;
@@ -388,6 +436,10 @@ fieldset {
 		width: 100%;
 	}
 
+	.banner h1 {
+		font-size: 50px;
+	}
+
 }
 @media screen and (max-width: 600px) {
 	.columns {
@@ -406,6 +458,13 @@ fieldset {
 		width: 100%;
 	}
 
+	.banner h1 {
+		font-size: 25px;
+	}
+
+	.banner h3 {
+		font-size: 18px;
+	}
 	
 	#contact input.submit {
 		margin-left: 0;
