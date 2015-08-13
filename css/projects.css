@@ -22,5 +22,15 @@ h3 {
 
 .description {
 	font-size: 25px;
-	margin-top: -20px;
+	margin-top: -10px;
+	display: inline-block;
+}
+
+
+.work {
+	font-size: 25px;
+}
+
+.work-cube {
+	margin-bottom: 30px;
 }
