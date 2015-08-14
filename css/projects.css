@@ -53,3 +53,8 @@ h3 {
 	transition: .5s ease-in-out;
 	color: #11ABB0;
 }
+
+p.wording {
+	color: #667370;
+	font-size: 20px;
+}
