@@ -1,70 +1,54 @@
 <?php
-	$name = $email = $message = $subject = "";
-	$nameErr = $emailErr = $messageErr = "";
-	$error = true;
-	if($_SERVER["REQUEST_METHOD"] == "POST") {
-		$error = false;
-		if(empty($_POST["contactName"])) {
-			$nameErr = "Please enter your name";
-			$error = true;
-		} else {
-			$name = test_input($_POST["contactName"]);
-		}
 
-		if(empty($_POST["contactEmail"])) {
-			$emailErr = "Pleasr enter your email address";
-			$error = true;
-		} else {
-			$email = test_input($_POST["contactEmail"]);
-		}
+    // Only process POST reqeusts.
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the form fields and remove whitespace.
+        $name = strip_tags(trim($_POST["contactName"]));
+		$name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $email = filter_var(trim($_POST["contactEmail"]), FILTER_SANITIZE_EMAIL);
+        $message = trim($_POST["contactMessage"]);
+        $subject = trim($_POST["contactSubject"]);
 
-		if(empty($_POST["message"])) {
-			$messageErr = "Hey!You forget to leave a message";
-			$error = true;
-		}  else {
-			$message = test_input($_POST["message"]);
-		}
+        // Check that data was sent to the mailer.
+        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            // Set a 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+            exit;
+        }
 
-		if(empty($_POST["contactSubject"])) {
-			$subject = "";
-		} else {
-			$subject = test_input($_POST["contactSubject"]);
-		}
+        // Set the recipient email address.
+        // FIXME: Update this to your desired email address.
+        $recipient = "jingqichen91@gmail.com";
 
+        // Set the email subject.
+        if(empty($subject)) {
+          	$subject = "New contact from $name";
+        }
+       
+        // Build the email content.
+        $email_content = "Name: $name\n";
+        $email_content .= "Email: $email\n\n";
+        $email_content .= "Message:\n$message\n";
 
-		if($nameErr == "" && !preg_match("/^[a-zA-Z]*$/", $name)) {
-			$error = true;
-			$nameErr = "Only letters and white space allowed for name";
-		}
+        // Build the email headers.
+        $email_headers = "From: $name <$email>";
 
-		if($emailErr == "" && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-			$error = true;
-			$emailErr = "Invalid email format";
-		}
-	}
-	if($_POST["submit"]) {
+        // Send the email.
+        if (mail($recipient, $subject, $email_content, $email_headers)) {
+            // Set a 200 (okay) response code.
+            http_response_code(200);
+            echo "Thank You! Your message has been sent.";
+        } else {
+            // Set a 500 (internal server error) response code.
+            http_response_code(500);
+            echo "Oops! Something went wrong and we couldn't send your message.";
+        }
 
-		if(!$error) {
-			$from = "From $email";
-			$to = "jingqichen91@gmail.com";
-			$body = "From: $name\n E-Mail: $email\n Message:\n $message";
-			if(mail ($to, $subject, $body, $from)) {
-				echo "succeed";
-			} else {
-				echo "Sonething went wrong";
-			}
-		} else {
-			echo $nameErr.$emailErr.$messageErr;
-		}
-		
-	}
-	
-	
-	function test_input($data) {
-		$data = trim($data);
-		$data = stripslashes($data);
-		$data = htmlspecialchars($data);
-		return $data;
-	}
+    } else {
+        // Not a POST request, set a 403 (forbidden) response code.
+        http_response_code(403);
+        echo "There was a problem with your submission, please try again.";
+    }
 
 ?>
