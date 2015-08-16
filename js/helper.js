@@ -59,9 +59,6 @@ function onScreen() {
 		var $this = $(this)
 
 		//check if the navbar is in this section
-		console.log(windowScroll);
-		console.log(navHeight);
-		console.log($this.offset().top);
 		if((windowScroll + navHeight >= $this.offset().top) &&
 			(windowScroll + navHeight <= $this.offset().top + $this.height())) {
 			$('li a#nav-' + $this.attr('id')).addClass('highlight');
