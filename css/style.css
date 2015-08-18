@@ -15,9 +15,14 @@
   font-family: 'zocial', sans-serif;
 }
 
+#home {
+	height: 500px;
+}
+
 a:hover {
 	text-decoration: none;
 }
+
 body {
 	line-height: 30px;
 	font-family:  'Open Sans', sans-serif;
@@ -27,37 +32,44 @@ body {
 header {
 	position: relative;
 	width: 100%;
-	min-height: 500px; 
+	min-height: 500px;
 	background-image: url("../images/b5.jpg");
-	background-position: 50% 0; 
+	background-position: 50% 0;
 	background-color: #161415;
 	background-size: cover;
-	-webkit-background-size:cover; 
-	margin-bottom: 30px;
+	-webkit-background-size:cover;
+	margin: 0 0 30px 0;
 }
 
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	line-height: 30px;
+}
 
 .banner {
 	height: 100%;
 	vertical-align: middle;
-	margin-top: 80px;
+	margin: 80px 0 0 0;
 }
-.banner h1 {
+
+.banner-title {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 90px;
 	text-align: center;
 	color: #fff;
 }
-.banner h3 {
+
+.banner-sub {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 25px;
 	line-height: 1.9em;
-	color: #A8A8A8;
+	color: #a8a8a8;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.banner hr {
+.banner-hr {
 	width: 80%;
 	margin: 18px auto 24px auto;
 	border-color: rgb(150, 150, 150);
@@ -72,47 +84,58 @@ header {
 .social li {
 	display: inline-block;
 	margin: 0 15px;
-
 }
+
 .social li a {
 	color: #fff;
 }
 
-
 .social li a:hover {
-	color: #11ABB0;
+	color: #11abb0;
 	transition: color .3s ease-in-out;
 }
+
 .nopadding {
 	padding: 0;
 }
 
-
-#about h2 {
+.about-title {
 	font-size: 32px;
 	line-height: 30px;
 	font-weight: 300;
-	margin-bottom: 12px;
+	margin: 0 0 12px 0;
 }
 
-#about p {
-	margin-bottom: 30px;
+.about-word {
+	margin: 0 0 30px 0;
 	line-height: 30px;
-	color: #7A7A7A;
+	color: #7a7a7a;
 }
 
-#about .contactDetails {
+#about .contact-details {
 	width: 50%;
 	float: left;
 }
 
-#about .contactDetails h2 {
+.phoNum {
+	color:#106363;
+}
+
+.con {
+	color: #106363;
+}
+
+#about .contact-details-title {
 	font-size: 22px;
 	line-height: 30px;
-	margin-bottom: 12px;
+	margin: 0 0 12px 0;
 }
+
+.edu {
+	margin: 0 0 30px 0;
+}
+
 .button {
-	
 	line-height: 30px;
 	padding: 12px 20px;
 	cursor: pointer;
@@ -123,36 +146,34 @@ header {
 	color: #fff;
 	font-size: 20px;
 	text-transform: uppercase;
-
 }
 
 .button:hover {
 	text-decoration: none;
-	color: #11ABB0;
+	color: #11abb0;
 	transition: .5s ease-in-out;
 }
+
 #about .contactInfo {
 	width: 100%;
 }
+
 #about .Resume {
 	width: 50%;
 	height: auto;
 	float: left;
-	margin-top: 50px;
-	
+	margin: 50px 0 0 0;
 }
+
 .project-image {
 	width: 100%;
 	height: 100%;
-
 }
 
 .project-image-coming {
 	width: 100%;
 	height: 100%;
-
 }
-
 
 .project-image:hover {
 	opacity: 0.3;
@@ -162,30 +183,29 @@ header {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px;
 	position: absolute;
 	transition:opacity 1s ease 0s;
 }
 
-.project-hover h3 {
-	padding-left: 8%;
-	padding-right: 8%;
-	margin-top: 15%;
+.project-hover-title {
+	padding: 0 8%;
+	margin: 15% 0 0 0;
 	font-size: 150%;
 	font-weight: 400;
 }
 
-.project-hover p {
-	padding-right: 8%;
-	padding-left: 8%;
-	margin-top: 10px;
+.project-hover-word {
+	padding: 0 8%;
+	margin: 10px 0 0 0;
 	color: rgba(44, 164, 209, 1);
 }
+
 .project-hover:hover {
 	opacity: 1;
 	background-color: rgba(255, 255, 255, .86);
 }
+
 .name {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 40px;
@@ -201,18 +221,17 @@ header {
 	text-align: center;
 }
 
-
 .logo {
 	background-color: rgb(255,255,255);
 	width: 145px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	border-radius: 100%;
 }
 
-ul#nav li a.highlight {
+#nav .highlight {
 	color: orange;
 }
+
 #nav-wrap {
 	font: 22px 'Open Sans', sans-serif;
 	width: 100%;
@@ -221,9 +240,9 @@ ul#nav li a.highlight {
 	top: 0;
 	position: fixed;
 	z-index: 100;
-	
 }
-ul#nav {
+
+#nav {
 	text-align: center;
 	padding: 0;
 	width: 100%;
@@ -231,54 +250,45 @@ ul#nav {
 	z-index: 100;
 }
 
-ul#nav li {
+.smooth-scroll {
 	height: 48px;
 	display: inline-block;
 }
 
-ul#nav li a {
+#nav li a {
 	color:white;
 	padding: 8px 13px;
 	display: inline-block;
 	text-align: center;
 }
 
-
-
-
-#skills h1 {
+.skills-title {
 	font: 18px/24px 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
-#skills h1 span {
-	border-bottom-width: 3px;
-	border-bottom-style: solid;
-	border-bottom-color:rgb(17, 171, 176);
-	padding-bottom: 6px;
+.skills-span {
+	border-bottom: 3px solid rgb(17, 171, 176);
+	padding: 0 0 6px 0;
 }
 
-
-#education h1 {
+.edu-title {
 	font: 18px/24px 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
-
-#education h1 span {
-	border-bottom-width: 3px;
-	border-bottom-style: solid;
-	border-bottom-color:rgb(17, 171, 176);
-	padding-bottom: 6px;
-
+.edu-word {
+	border-bottom: 3px solid rgb(17, 171, 176);
+	padding: 0 0 6px 0;
 }
 
 .charts {
 	width: 100%;
 	height: 100%;
 }
+
 .chart {
 	position: relative;
 	width: 100px;
@@ -301,6 +311,7 @@ ul#nav li a {
 	text-align: center;
 	font-size: 150%;
 }
+
 .label {
 	font: 15px 'Open Sans', sans-serif;
 	color: #313131;
@@ -309,78 +320,64 @@ ul#nav li a {
 	font-weight: normal;
 	position: relative;
 	width: 100px;
-	margin-top: 0.2em;
-	margin-bottom: 0.3em;
-}
-
-h3 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 25px;
-	line-height: 30px;
+	margin: 0.2em 0 0.3em 0;
 }
 
 .info {
 	font-family: librebaskerville-italic, serif;
 	font-size: 16px;
 	line-height: 24px;
-	color: #6E7881;
-	margin-top: 9px;
-	margin-bottom: 18px;
+	color: #6e7881;
+	margin: 9px 0 18px 0;
 }
 
 #contact {
 	background-color: rgb(25, 25, 25);
-	padding-top: 96px;
-	padding-bottom: 102px;
+	padding: 96px 0 102px 0;
 	color: #636363;
 	width: 100%;
-	height: 100%; 
+	height: 100%;
 }
 
-p.head {
+.cont-title {
 	font-size: 18px;
 	font-weight: 100;
 	font-family:  'Open Sans', sans-serif;
 	line-height: 36px;
-	margin-bottom: 50px;
+	margin: 0 0 50px 0;
 	width: 100%;
 }
 
-
-#contact form {
-	margin-bottom: 30px;
+.cont-form {
+	margin:0 0 30px 0;
 }
 
-
-fieldset {
+.field {
 	border: 0;
-	margin-bottom: 24px;
+	margin:0 0 24px 0;
 }
 
-#contact label {
+.cont-lab {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	line-height: 24px;
-	margin-top: 12px;
-	margin-bottom: 12px;
-	color: #EBEEEE;
+	margin: 12px 0;
+	color: #ebeeee;
 	width: 26%;
 	float: left;
 }
+
 .row {
 	width: 96%;
 	max-width: 1020px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 }
-#contact input {
-	padding-top: 10px;
-	padding-right: 20px;
-	padding-bottom: 10px;
-	padding-left: 20px;
+
+.cont-input {
+	padding: 10px 20px;
 	color: #eee;
 	background: #373233;
-	margin-bottom: 42px;
+	margin: 0 0 42px 0;
 	border: 0;
 	outline: none;
 	font-size: 15px;
@@ -388,22 +385,23 @@ fieldset {
 	width: 65%;
 }
 
-#contact input:focus {
-	background-color: #11ABB0;
+.cont-input:focus {
+	background-color: #11abb0;
 }
 
-#contact textarea:focus {
-	background-color: #11ABB0;
+.cont-text:focus {
+	background-color: #11abb0;
 }
 
-#contact span.required {
-	color: #11ABB0;
+#contact .required {
+	color: #11abb0;
 	font-size: 13px;
 }
-#contact textarea {
+
+.cont-text {
 	color: #eee;
 	background: #373233;
-	margin-bottom: 42px;
+	margin: 0 0 42px 0;
 	border: 0;
 	outline: none;
 	font-size: 15px;
@@ -411,35 +409,30 @@ fieldset {
 	width: 65%;
 }
 
-#contact input.submit {
+.cont-submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	background: #0D0D0D;
+	background: #0d0d0d;
 	color: #fff;
 	border: none;
 	cursor: pointer;
 	font-size: 15px;
 	height: auto;
-	margin-left: 26%;
+	margin: 0 0 0 26%;
 	padding: 15px;
 	border-radius: 5px;
 	width: auto;
-
 }
 
-#contact input.submit:hover {
-	color: #0D0D0D;
+.cont-submit:hover {
+	color: #0d0d0d;
 	background-color: #fff;
 	transition:1s;
-
-
 }
+
 .columns {
 	position: relative;
-	padding-bottom: 0;
-	padding-right: 20px;
-	padding-top: 0;
-	padding-left: 20px;
+	padding: 0 20px;
 	float: left;
 	min-height: 1px;
 }
@@ -461,28 +454,30 @@ fieldset {
 	width: 83.333333%;
 	height: auto;
 }
-#contact h4 {
+
+.contact-title {
 	font-size: 16px;
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
-	color: #BEEEEE;
+	color: #beeeee;
 	margin-bottom: 6px;
 }
 
-.hamburgerIcon {
+.hamburger-icon {
 	font-size: 25px;
 	padding: 15px;
 	display: none;
-	background-color: #CC5200;
+	background-color: #cc5200;
 }
-.contactIcon {
+
+.contact-icon {
 	font-size: 60px;
-	padding-left:10px;
+	padding: 20px 0 0 10px;
 	width: 100%;
-	padding-top: 20px; 
 }
+
 @media screen and (max-width: 750px) {
-	.contactIcon {
+	.contact-icon {
 		display: none;
 	}
 
@@ -490,11 +485,12 @@ fieldset {
 		width: 100%;
 	}
 
-	.banner h1 {
+	.banner-title {
 		font-size: 50px;
 	}
 
 }
+
 @media screen and (max-width: 600px) {
 	.columns {
 		float: none;
@@ -507,20 +503,20 @@ fieldset {
 	.row .eight {
 		width: 100%;
 	}
-	
+
 	.row .two {
 		width: 100%;
 	}
 
-	.banner h1 {
+	.banner-title {
 		font-size: 35px;
 	}
 
-	.banner h3 {
+	.banner-sub {
 		font-size: 20px;
 	}
-	
-	#contact input.submit {
+
+	.cont-submit {
 		margin-left: 0;
 	}
 
@@ -533,11 +529,11 @@ fieldset {
 	#nav {
 		display: none;
 	}
-	ul#nav li {
+	#nav .smooth-scroll {
 		display: block;
 		width: auto;
 	}
-	.hamburgerIcon {
+	.hamburger-icon {
 		display: block;
 }
 

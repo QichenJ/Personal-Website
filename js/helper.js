@@ -27,9 +27,9 @@
 			triggerOnce: true,
 			offset: 'bottom-in-view'
 	});
-	
+
 	//when hamburgerIcon is clicked, the nav bar will show or off
-	$('.hamburgerIcon').on('click', function() {
+	$('.hamburger-icon').on('click', function() {
 		var navbar = $('#nav');
 		if(navbar.css('display') === 'none') {
 			navbar.css('display',  'block');
@@ -38,8 +38,8 @@
 		}
 	});
 
-	//Because .css added inline style, so I need to change inline display when page 
-	//resized back 
+	//Because .css added inline style, so I need to change inline display when page
+	//resized back
 	$(window).resize(function(){
 		if ($(window).width() >= 601) {
 			$('#nav').css('display', 'inline-block');
