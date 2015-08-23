@@ -9,7 +9,6 @@ $(function() {
 			type: 'POST',
 			url: $(form).attr('action'),
 			data: formData
-
 		})
 
 		.done(function(response) {
@@ -20,7 +19,6 @@ $(function() {
 			$('#contactEmail').val('');
 			$('#contactSubject').val('');
 			$('#contactMessage').val('');
-
 		})
 
 		.fail(function(data) {
@@ -32,9 +30,6 @@ $(function() {
 			} else {
 				$(formMessage).text('Oops! An error occured and your message could not be sent');
 			}
-
 		})
-	}) 
-
-
+	})
 })

@@ -61,9 +61,9 @@ function onScreen() {
 		//check if the navbar is in this section
 		if((windowScroll + navHeight >= $this.offset().top) &&
 			(windowScroll + navHeight <= $this.offset().top + $this.height())) {
-			$('li a#nav-' + $this.attr('id')).addClass('highlight');
+			$('li a#nav-' + $this.attr('id')).css('color', 'orange');
 		} else {
-			$('li a#nav-' + $this.attr('id')).removeClass('highlight');
+			$('li a#nav-' + $this.attr('id')).css('color', 'white');
 		}
 	});
 }
